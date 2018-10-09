@@ -54,7 +54,7 @@ Use cases:
 		Use: "with",
 		Short: "with let's you run any shell command with variables, in parallel",
 		Long: longDesc,
-		Version: "v0.1-alpha.0",
+		Version: "v0.1-beta.0",
 		Args: cobra.ExactArgs(1),
 		Run: withCmd,
 	}
