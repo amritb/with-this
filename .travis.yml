@@ -1,3 +1,12 @@
 language: go
 go:
-  - "1.10"
+- '1.10'
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: YtqQK6Wm/wGm/1b94EUeBr4kNTtRi4zkT82QqqEWsGbBaTjOCXHcTLZyOmt4DARIVRzdrvtBRuxt28IMIlIOf5X41Ngy1WioIDuW2K9LDVQmZldzlm5u9Rb2LgA6hPfQpK2neNpqd0ry1PofxDGb+OO1r6JXe6YWjr2aVvxi3YIS+q1jBsZdXOWTP40lipf2DHUORVZHESwSTTaAkXSpW7NIKrc9qjvzeiHXZEFrKgpHnQLz5P0WFAtAaPEai9AnWA4wgH1c0mjzQJGchZoDUyj9HAYTRDX9aafuzH/RI8Y2vR041yHn3Non3SXseLFBuuE/w0sgM29UAfabs3RopBcS1/YB7AvHCFw3BNTwG6Y37QvIG1FcIqikjVrPXDj9X5+v0Ew9BsPCuF9ogSdLGa/c3u3tGxz6pE5lrj+E3XMlFUhVNH5fQLX6XKPAADVIAm+foZs3PwbOTZpZsyybxWC3SUoDaCLsSAhGryTPuxCJloo7YZhby3oj1F6UCZCuWT7kMREq/yKc9FC4vrT5GY67NSKD/1b4KGOXnPw63IbY1VgUq0wUsjwqzHJez4+MRaI4r0JKA/x8PsMlv99ZEOaXXQvMQKtGUH+DxyJT5pZyEIRDvxa1a/XV/wqCPTYRQkrYs4psef+sH/cE+2oX3OmnGjA3R4HuO3DlaJ7spF4=
+  on:
+    tags: true
+    repo: amritb/with-this
+    branch: master
