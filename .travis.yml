@@ -1,6 +1,7 @@
 language: go
 go:
 - '1.10'
+script: cd cmd && go test
 deploy:
   skip_cleanup: true
   provider: releases
