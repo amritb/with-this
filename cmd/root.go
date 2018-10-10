@@ -73,11 +73,6 @@ func withCmd(cmd *cobra.Command, arguments []string) {
 	failures := 0
 	start := time.Now()
 	with := strings.Fields(Values)
-	keyLoc := strings.Index(arguments[0], "this")
-
-	if (keyLoc == -1) {
-		errorColor.Println("this not found in command.")
-	}
 
 	var wg sync.WaitGroup
 

@@ -4,6 +4,8 @@
 
 If you have multiple **this** in your command, each one will be replaced (*todo: this should be controllable in a future release using flags*).
 
+If you don't place **this** in your target command, then `with` will iterate the same command *n* times where *n* equals the number of items in your `--values` input.
+
 In case of errors, `with` will only report and continue with the remaining iterations/values.
 
 ## Installation
@@ -44,3 +46,7 @@ You have a directory with lots of *kubeconfig* files and want to get pods from a
 ```
 $ with -v "$(ls | grep config)" "kubectl --kubeconfig=this get pods"
 ```
+
+Run the exact same command 10 times in parallel:
+```
+$ with -v "$(echo {1..10})" "echo 123"
